@@ -1,0 +1,133 @@
+.crew-main{
+    position: absolute;
+    top: 130px;
+    // z-index: 0;
+    .crew-heading{
+        font-weight: 300;
+    width: 70%;
+    margin: 80px auto 0 auto;
+    font-size: 1.75em;
+    letter-spacing: 5px;
+    word-spacing: 9px;
+    text-transform: uppercase;
+    color: white;
+    // height: 100vh;
+        span{
+            color: #FFFFFF40;
+            font-weight: 900;
+        }
+    }
+        .ourcrew-info{
+            // margin: 100px;
+            // margin-top: 900px;
+            // height: 90vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 70%;
+            margin: auto;
+            color: white;
+            position: relative;
+            z-index: 2;
+            // background-color: red;
+            // background-color: blue;
+                .crew-bio{
+                    max-width: 50%;
+                    z-index: 2;
+                    // background-color: red;
+                        .crew-post{
+                            font-size: 2em;
+                            font-weight: 200;
+                            font-family: 'bellefair', sans-serif;
+                            color: #FFFFFF80;
+                        }
+                        .crew-name{
+                            font-size: 3.5em;
+                            font-weight: 200;
+                            font-family: 'bellefair', sans-serif;
+                            margin-top: 12px;
+                        }
+                        .crew-desc{
+                            font-size: 1.1em;
+                            margin-top: 32px;
+                            letter-spacing: 1px;
+                            word-spacing: 2px;
+                            font-family: 'barlow', sans-serif;
+                            font-weight: 200;
+                        }
+                }
+                .dots{
+                    z-index: 2;
+                    // width: 30%;
+                    height: 5vh;
+                    display: flex;
+                    // margin-top: 200px;
+                    position: absolute;
+                    // top: 200px;
+                    bottom: 0;
+                    // top: 0;
+                    left: 0;
+                    // background-color: red;
+                    div{
+                        width: 15px;
+                        height: 15px;
+                        background-color: gray;
+                        margin: 10px;
+                        border-radius: 50%;
+                            &:hover{
+                                cursor: pointer;
+                            }
+                    }
+                }
+        }
+}
+
+@media screen and (max-width: 1050px){
+    .crew-main .ourcrew-info{
+        flex-direction: column;
+        max-width: 100%;
+        // background-color: red;
+        grid-row-gap: 100px;
+            .crew-image-holder{
+                width: 50%  !important;
+                // background-color: red;
+            }
+            .crew-bio{
+                text-align: center;
+                max-width: 80%;
+            }
+            .dots{
+                top: 250px;
+                // transform: translateX(100%);
+                // bottom: 0;
+                // margin: auto;
+                // height: 0;
+                left:40%;
+            }
+    }
+    .crew-main .crew-heading{
+        margin:60px auto;
+        width: 90%;
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 612px){
+    .crew-main .ourcrew-info .dots{
+        // transform: translateX(100%) translateY(-100%);
+        top: 330px;
+        left: 36%;
+        // top: 40%;
+        // left: auto;
+        // right: auto;
+        // margin: auto;
+        // left: 15%;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .crew-main .ourcrew-info .dots{
+        left: 32%;
+        top: 400px;
+    }
+}
